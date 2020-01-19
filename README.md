@@ -1,4 +1,4 @@
-# Datetime
+# DateTime
 [![Build Status](https://travis-ci.com/Morebec/Datetime.svg?branch=master)](https://travis-ci.com/Morebec/Collections)
 
 The DateTime component provides classes and functionality for dates and times.
