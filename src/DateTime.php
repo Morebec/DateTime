@@ -10,7 +10,7 @@ use DateTime as PHPDateTime;
 /**
  * DateTime ACL
  */
-class DateTime implements \JsonSerializable
+final class DateTime implements \JsonSerializable
 {
     public const DEFAULT_FORMAT = 'Y-m-d H:i:s';
 
@@ -19,6 +19,10 @@ class DateTime implements \JsonSerializable
     /** @var ChronosInterface */
     private $chronos;
 
+    /**
+     * DateTime constructor.
+     * @param mixed $dateTime
+     */
     private function __construct($dateTime)
     {
         if ($dateTime instanceof self) {
@@ -202,7 +206,7 @@ class DateTime implements \JsonSerializable
     /**
      * @inheritDoc
      */
-    public function jsonSerialize()
+    public function jsonSerialize(): string
     {
         return (string)$this;
     }

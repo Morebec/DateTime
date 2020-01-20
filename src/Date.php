@@ -6,7 +6,7 @@ use Cake\Chronos\ChronosInterface;
 use Cake\Chronos\Date as ChronosDate;
 use DateTime as PHPDateTime;
 
-class Date
+final class Date
 {
     public const DEFAULT_FORMAT = 'Y-m-d';
 
@@ -15,6 +15,10 @@ class Date
     /** @var ChronosDate */
     private $chronos;
 
+    /**
+     * Date constructor.
+     * @param mixed $date
+     */
     private function __construct($date)
     {
         if ($date instanceof self) {
