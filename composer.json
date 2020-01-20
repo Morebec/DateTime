@@ -1,5 +1,5 @@
 {
-    "name": "morebec/collections",
+    "name": "morebec/datetime",
     "description": "The Datetime component is an ACL wrapper around CakePHP, it also provides a settable SystemClock.",
     "type": "library",
     "license": "MIT",
