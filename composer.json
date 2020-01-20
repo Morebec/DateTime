@@ -1,0 +1,30 @@
+{
+    "name": "morebec/collections",
+    "description": "The Datetime component is an ACL wrapper around CakePHP, it also provides a settable SystemClock.",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "jwillp",
+            "email": "jwilliam.perreault@morebec.com"
+        }
+    ],
+    "require": {
+        "cakephp/chronos": "^2.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^8.5",
+        "phpstan/phpstan": "^0.12.5",
+        "friendsofphp/php-cs-fixer": "^2.16"
+    },
+    "autoload": {
+        "psr-4": {
+            "Morebec\\DateTime\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\Morebec\\DateTime\\": "tests/"
+        }
+    }
+}
