@@ -14,7 +14,7 @@ class SystemClock
 {
     public const UTC = 'UTC';
 
-    /** @var DateTime */
+    /** @var DateTime|null */
     private static $customDate;
 
     public static function now():  DateTime
@@ -32,7 +32,7 @@ class SystemClock
         return self::now()->getTimestamp();
     }
 
-    public static function set(DateTime $date)
+    public static function set(DateTime $date): void
     {
         self::$customDate = $date;
     }
