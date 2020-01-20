@@ -1,5 +1,5 @@
 # DateTime
-[![Build Status](https://travis-ci.com/Morebec/Datetime.svg?branch=master)](https://travis-ci.com/Morebec/Collections)
+[![Build Status](https://travis-ci.com/Morebec/DateTime.svg?branch=master)](https://travis-ci.com/Morebec/DateTime)
 
 The DateTime component provides classes and functionality for dates and times.
 It serves as an ACL wrapper around CackePHP/Chronos for Orkestra.
