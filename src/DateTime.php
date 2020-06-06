@@ -12,7 +12,7 @@ use DateTime as PHPDateTime;
  */
 final class DateTime implements \JsonSerializable
 {
-    public const DEFAULT_FORMAT = 'Y-m-d H:i:s';
+    public const DEFAULT_FORMAT = 'Y-m-d H:i:s.u';
 
     public const UTC = 'UTC';
 
